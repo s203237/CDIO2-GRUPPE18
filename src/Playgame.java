@@ -172,7 +172,6 @@ public class Playgame {
 
                 break;
             case 7:
-                currentplayer.money = 0;
                 if (language.equals("en")) {
                     System.out.println("You arrived to the Monastery and get to sleep for free");
                     System.out.println(TEXT_RESET+"Current money of " + GREEN_BOLD+currentplayer.getName() +TEXT_RESET+ " is " +TEXT_BLUE+ currentplayer.getMoney());
