@@ -126,7 +126,13 @@ public class Playgame {
                 }
                 break;
             case 3:
-                currentplayer.setMoney(currentplayer.getMoney() - 100);
+                int tempMoney = currentplayer.getMoney() - 100;
+                if (tempMoney < 0){
+                    currentplayer.setMoney(0);
+                }
+                else {
+                    currentplayer.setMoney(currentplayer.getMoney() - 100);
+                }
                 if (language.equals("en")) {
                     System.out.println("You fell in the Crater and lost 100");
                     System.out.println(TEXT_RESET + "Current money of " + GREEN_BOLD + currentplayer.getName() + TEXT_RESET + " is " + TEXT_BLUE + currentplayer.getMoney());
@@ -151,7 +157,13 @@ public class Playgame {
 
                 break;
             case 5:
-                currentplayer.setMoney(currentplayer.getMoney() - 20);
+                tempMoney = currentplayer.getMoney() - 20;
+                if (tempMoney < 0){
+                    currentplayer.setMoney(0);
+                }
+                else {
+                    currentplayer.setMoney(currentplayer.getMoney() - 20);
+                }
                 if (language.equals("en")) {
                     System.out.println("You arrived to the Cold dessert you lost 20");
                     System.out.println(TEXT_RESET + "Current money of " + GREEN_BOLD + currentplayer.getName() + TEXT_RESET + " is " + TEXT_BLUE + currentplayer.getMoney());
@@ -186,7 +198,13 @@ public class Playgame {
 
                 break;
             case 8:
-                currentplayer.setMoney(currentplayer.getMoney() - 70);
+                tempMoney = currentplayer.getMoney() - 70;
+                if (tempMoney < 0){
+                    currentplayer.setMoney(0);
+                }
+                else {
+                    currentplayer.setMoney(currentplayer.getMoney() - 70);
+                }
                 if (language.equals("en")) {
                     System.out.println("You hit the black cave and lost 70");
                     System.out.println(TEXT_RESET + "Current money of " + GREEN_BOLD + currentplayer.getName() + TEXT_RESET + " is " + TEXT_BLUE + currentplayer.getMoney());
@@ -210,7 +228,13 @@ public class Playgame {
 
                 break;
             case 10:
-                currentplayer.setMoney(currentplayer.getMoney() - 80);
+                tempMoney = currentplayer.getMoney() - 80;
+                if (tempMoney < 0){
+                    currentplayer.setMoney(0);
+                }
+                else {
+                    currentplayer.setMoney(currentplayer.getMoney() - 80);
+                }
                 currentplayer.getmoreturn = true;
                 if (language.equals("en")) {
                     System.out.println("You arrived to the werewolf wall, and lost 80, but you get a extra roll");
@@ -223,7 +247,13 @@ public class Playgame {
 
 
             case 11:
-                currentplayer.setMoney(currentplayer.getMoney() - 50);
+                tempMoney = currentplayer.getMoney() - 50;
+                if (tempMoney < 0){
+                    currentplayer.setMoney(0);
+                }
+                else {
+                    currentplayer.setMoney(currentplayer.getMoney() - 50);
+                }
                 if (language.equals("en")) {
                     System.out.println("You arrive at the pit and lose 50");
                     System.out.println(TEXT_RESET + "Current money of " + GREEN_BOLD + currentplayer.getName() + TEXT_RESET + " is " + TEXT_BLUE + currentplayer.getMoney());
